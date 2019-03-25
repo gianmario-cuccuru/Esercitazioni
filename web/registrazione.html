@@ -12,14 +12,18 @@ and open the template in the editor.
         <meta name="author" content="Gianmario Cuccuru">
         <meta name="keywords" content="FPW, Progetto, HTML, CSS, Java">
         <meta name="description" content="Pagina di registrazione dell'esercitazione di FPW">
+        <link rel="stylesheet" type="text/css" href="style.css" media="screen">
     </head>
     <body>
-        <div>
+        <header>
             <h1>Writing is easy! <a href="index.html">Or go back</a></h1>
-        </div>
-        <div>
+            <div id="logo">
+                <img title="Mainn Image" alt="Penna che scrive su foglio" src="img/writing.jpg" width="400" height="300">
+            </div>
+        </header>
+        <main>
             <form action="index.html" method="post">
-                <label for="id_nomeutente">Nome: </label>
+                <label class="importante" for="id_nomeutente">Nome: </label>
                 <input type="text" name="nomeUtente" id="id_nomeutente" value="Mario Rossi">
                 <br/>
                 
@@ -31,8 +35,37 @@ and open the template in the editor.
                 <input type="text" name="password" id="id_password" value="Password">
                 <br/>
                 
+                <label for="scrittore">Scrittore: </label>
+                <input type="radio" name="tipo_utente" id="scrittore" value="scrittore">
+                <br/>
+                
+                <label for="autore">Autore: </label>
+                <input type="radio" name="tipo_utente" id="autore" value="autore">
+                <br/>
+                
+                <p class="importante">Colore preferito</p>
+                <select>
+                    <option value="red">Rosso</option>
+                    <option value="white">Bianco</option>
+                    <option value="grey">Grigio</option>
+                    <option value="yellow">Giallo</option>
+                    <option value="green">Verde</option>
+                </select>
+                <br/>
                 <input type="submit" value="Submit"/>
             </form>
+        </main>
+        <div id="content">
+            <div>
+                <h2>Prova_interna</h2>
+            </div>
+            <h2>Prova 1</h2>
+            <h2>Prova 2</h2>
+            <h2>Prova 3</h2>
+            <h2>Prova 4</h2>
         </div>
+        <footer>
+            <p>Developed by Gianmario Cuccuru</p>
+        </footer>
     </body>
 </html>
