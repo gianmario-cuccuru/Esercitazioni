@@ -7,28 +7,89 @@ and open the template in the editor.
     Created on : 25-mar-2019, 9.34.54
     Author     : Gianmario
 */
+/*Style*/
+*{
+    box-sizing: border-box;
+    border-color: steelblue;
+}
+
 body{
-    font-size: 14 px;
     font-family: "Open Sans", Arial, sans-serif;
-    color: black;
-}
-
-#logo{
-    background-color: #1c345a;
-}
-
-header, footer{
+    background: #333333;
     color: white;
 }
 
-.importante{
-    font-weight: bold;
+h1, h2, h3{
+    color: #35E0B1;
 }
 
-div#content h2{
-    color: #9e1616;
+input{
+    background: teal;
+    color: white;
 }
 
-h1, h2, h3, h4, h5, h6{
-    color: #1c345a;
+input:focus{
+    color: whitesmoke;
+    background: salmon;
+}
+
+a:visited{
+    color: red;
+}
+
+a:link{
+    color: white;
+}
+
+a:active{
+    color: blueviolet;
+}
+
+ol{
+    list-style-type: upper-roman;
+}
+
+/*Layout*/
+
+header{
+    border-width: medium;
+    border-style: solid;
+}
+
+#logodiv{
+    height: 150px;
+    position: relative;
+}
+
+.logoimg {
+    height: 100%;
+}
+
+#logotitle{
+    position: absolute;
+    display: inline;
+}
+
+nav ul li{
+    list-style: none;
+    border-style: solid;
+    float: right;
+    border-radius: 20px;
+    padding: 14px;
+}
+
+nav ul li:first-child{
+    width: 30%;
+}
+
+nav ul{
+    margin: 0px;
+    position: relative;
+}
+
+nav{
+    border-style: solid;
+    border-width: medium;
+    float: left;
+    width: 100%;
 }
